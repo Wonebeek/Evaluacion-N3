@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/estiloEjercicio2.css">
+    <title>ejercicio2</title>
+</head>
+<body>
+<div class="container">
+  <form action="/ejercicio2" method="POST">
+    <label for="nombre1">Nombre 1:</label>
+    <input class="Recuadro" type="text" id="nombre1" name="nombre1" required>
+    <label for="nombre2">Nombre 2:</label>
+    <input class="Recuadro" type="text" id="nombre2" name="nombre2" required>
+    <label for="nombre3">Nombre 3:</label>
+    <input class="Recuadro" type="text" id="nombre3" name="nombre3" required>
+    <button type="submit">Enviar</button>
+  </form>
+  {% if resultado1 %}
+  <p>{{resultado1}}</p>
+  <p>{{resultado2}}</p>
+  {% endif %}
+</div>
+</body>
+</html>

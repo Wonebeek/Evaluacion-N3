@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif; /* Se establece la fuente como Arial y sans-serif como respaldo */
+    margin: 0; /* Se elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Se elimina el padding predeterminado del cuerpo */
+    background-color: #f0f0f0; /* Se establece el color de fondo gris */
+    display: flex; /* Se utiliza un contenedor flexible para poder centrar el contenido */
+    justify-content: center; /* Se centra el contenido horizontalmente */
+    align-items: center; /* Se centra el contenido verticalmente */
+    height: 600px; /* Se define la altura fija de 600px para el cuerpo */
+    flex-direction: column; /* Se organiza los elementos en una columna */
+}
+
+.button-container {
+    display: grid; /* Se utiliza un diseño de cuadrícula para el contenedor de botones */
+    grid-template-columns: repeat(1, 1fr); /* Se establece una sola columna de ancho flexible */
+    gap: 15px; /* Se añade un espacio de 15px entre los elementos de la cuadrícula */
+}
+
+.button {
+    max-width: 90px; /* Se establece un ancho máximo de 90px para los botones */
+    padding: 20px; /* Se agrega un padding interno de 20px */
+    color: white; /* Se establece el color de texto como blanco */
+    border-radius: 10px; /* Se aplica bordes redondeados de 10px */
+    background-color: #007BFF; /* Se establece el color de fondo como azul */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Se añade una sombra sutil a los botones */
+    text-align: center; /* Se centra el texto dentro del botón */
+    width: 100%; /* Se ajusta el botón al 100% del contenedor */
+    cursor: pointer; /* Se cambia el cursor a una mano para indicar el clic */
+    transition: background-color 0.3s ease; /* Se agrega una transición suave al cambiar el color de fondo */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Se cambia el color de fondo a un azul más oscuro al pasar el cursor por encima */
+}

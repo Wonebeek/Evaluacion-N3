@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/estiloEjercicio1.css">
+    <title>ejercicio1</title>
+</head>
+<body>
+<div class="container">
+    <h1>Formulario de Notas</h1>
+    <form action="/ejercicio1" method="POST">
+        <label class="bold" for="nota1">Nota 1:</label><br>
+        <input class="Recuadro" type="number" id="nota1" name="nota1" min="10" max="70" required>
+        <label class="bold" for="nota2">Nota 2:</label><br>
+        <input class="Recuadro" type="number" id="nota2" name="nota2" min="10" max="70" required>
+        <label class="bold" for="nota3">Nota 3:</label><br>
+        <input class="Recuadro" type="number" id="nota3" name="nota3" min="10" max="70" required>
+        <label class="bold" for="asistencia">Asistencia (%):</label><br>
+        <input class="Recuadro" type="number" id="asistencia" name="asistencia" min="0" max="100" required>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if nota_final %}
+    <p>{{nota_final}}</p>
+    <p>{{resultado}}</p>
+    {% endif %}
+</div>
+</body>
+</html>
